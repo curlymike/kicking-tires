@@ -34,6 +34,7 @@
 
     <modules>
         <module>simple-email-client</module>
+        <module>jetty-embedded</module>
     </modules>
 
     <build>
