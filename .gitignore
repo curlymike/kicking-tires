@@ -1,0 +1,7 @@
+.idea
+log
+out
+target
+temp
+*.iml
+**/resources/erp/*.txt
