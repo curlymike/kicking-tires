@@ -31,11 +31,21 @@ public class Client {
         //create the POP3 store object and connect with the pop server
         Store store = emailSession.getStore("pop3s");
 
-        store.connect("pop.mail.ru","officelinespb-tech@mail.ru", "S3HJU7KSv3");
+        //store.connect("pop.mail.ru","officelinespb-tech@mail.ru", "S3HJU7KSv3");
+        store.connect("pop.mail.ru","officelinespb-tech@mail.ru", "qi8R03YwR5z4GrxPpiFa");
 
         //create the folder object and open it
         Folder emailFolder = store.getFolder("INBOX");
         emailFolder.open(Folder.READ_ONLY);
+
+        //store.getDefaultFolder();
+        //store.getPersonalNamespaces();
+        //store.getUserNamespaces();
+//        Folder[] namespaces = store.getSharedNamespaces();
+//        for (Folder namespace : namespaces) {
+//            System.out.println(namespace.getFullName());
+//        }
+//        System.out.println("---");
 
         // retrieve the messages from the folder in an array and print it
         Message[] messages = emailFolder.getMessages();
